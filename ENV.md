@@ -15,8 +15,8 @@
    cp example.env .env
    ```
 
-5. LLM 模型使用 DeepSeek，API Key 已存放在系统环境变量 `DeepSeek_API` 中。你需要：
-   - 读取系统环境变量 `MODEL_APIKEY`，并将其值写入 `.env` 的 `model_api` 字段。
+5. LLM 模型使用 DeepSeek，API Key 已存放在系统环境变量 `MODEL_API_KEY` 中。你需要：
+   - 读取系统环境变量 `MODEL_API_KEY`，并将其值写入 `.env` 的 `model_api` 字段。
    - 设置 `base_url` 为 `https://api.deepseek.com`。
    - 设置模型名称为 `deepseek-v4-flash`。
    - 如有必要，修改代码以支持从 `.env` 读取 `model_name`、`model_base_url`、`model_api` 三项配置。
@@ -24,5 +24,5 @@
      ```
      model_name=deepseek-v4-flash
      model_base_url=https://api.deepseek.com
-     model_api=<从系统环境变量读取的 DeepSeek_API 值>
+     model_api=<从系统环境变量读取的 MODEL_API_KEY 值>
      ```
